@@ -71,9 +71,8 @@ for (const name of directoryNames) {
     continue;
   }
 
-  const keys = Object.keys(parsed.metadata).sort();
-  if (!sameJson(keys, ['description', 'name'])) {
-    error(`skills/${name}/SKILL.md: frontmatter must contain only name and description`);
+  if (!parsed.metadata.name || !parsed.metadata.description) {
+    error(`skills/${name}/SKILL.md: frontmatter must contain name and description`);
   }
   if (parsed.metadata.name !== name) {
     error(`skills/${name}/SKILL.md: frontmatter name must match the directory`);

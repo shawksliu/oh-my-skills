@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "doc-to-docx",
+  "description": "将 .doc 与 .wps 格式文档转换为 .docx 格式文档的转换工具。优先调用 WPS/Word COM 接口，跨平台或无 Office 环境下自动降级调用 LibreOffice。当用户需要将 .doc/.wps 转化为 .docx、批量转换旧版 Word/WPS 文档格式时使用此技能。",
+  "version": "0.1.0",
+  "author": {
+    "name": "liuxj"
+  },
+  "license": "MIT",
+  "keywords": [
+    "doc",
+    "docx",
+    "wps",
+    "converter"
+  ],
+  "skills": [
+    "./"
+  ]
+}

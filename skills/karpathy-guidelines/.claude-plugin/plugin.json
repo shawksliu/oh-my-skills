@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "karpathy-guidelines",
+  "description": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
+  "version": "0.1.0",
+  "author": {
+    "name": "liuxj"
+  },
+  "license": "MIT",
+  "keywords": [
+    "guidelines",
+    "coding",
+    "best-practices"
+  ],
+  "skills": [
+    "./"
+  ]
+}

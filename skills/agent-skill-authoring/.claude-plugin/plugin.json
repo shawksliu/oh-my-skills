@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "agent-skill-authoring",
+  "description": "撰写、优化与审查 Agent 技能 (Skill/Prompt Rule) 的高级实战指南。当用户要求创建新 Skill、修改现有 Skill，或需要将某种工作流/经验总结为 Agent 行为规范时使用。本规程确保生成的 Skill 具备防偷懒/防伪造、动机驱动 (Theory of Mind)、弹性分级与闭环修复能力，拒绝形式主义模板。 Make sure to use this skill whenever designing, drafting, editing, or auditing agent skills, custom prompts, or behavioral rules.",
+  "version": "0.1.0",
+  "author": {
+    "name": "liuxj"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skill-authoring",
+    "guidelines",
+    "prompt"
+  ],
+  "skills": [
+    "./"
+  ]
+}

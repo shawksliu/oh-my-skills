@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "markitdown",
+  "description": "Use when needing to convert files (PDF, DOCX, PPTX, XLSX, HTML, images, audio, EPUB, ZIP, YouTube URLs) to Markdown for LLM consumption or text analysis. Use when user mentions \"markitdown\", \"convert to markdown\", \"extract text from document\", or needs to read binary/office file contents.",
+  "version": "0.1.0",
+  "author": {
+    "name": "liuxj"
+  },
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "conversion",
+    "pdf",
+    "office"
+  ],
+  "skills": [
+    "./"
+  ]
+}
