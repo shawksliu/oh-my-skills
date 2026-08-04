@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Skill Repository"
+  short_description: "Create, import, validate, and publish repository skills"
+  default_prompt: "Use $manage-skill-repository to add or update a skill in this repository."

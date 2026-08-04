@@ -1,0 +1,17 @@
+{
+  "name": "oh-my-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A personal skill registry compatible with npx skills and Claude Code marketplaces.",
+  "type": "module",
+  "scripts": {
+    "skill:create": "node scripts/create-skill.mjs",
+    "skill:register": "node scripts/register-skill.mjs",
+    "marketplace:sync": "node scripts/sync-marketplace.mjs",
+    "check": "node scripts/validate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

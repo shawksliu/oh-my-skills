@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "oh-my-skills",
+  "owner": {
+    "name": "liuxj"
+  },
+  "metadata": {
+    "description": "Personal skills developed and curated by liuxj.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "manage-skill-repository",
+      "source": "./skills/manage-skill-repository",
+      "description": "Create, import, update, validate, and publish Agent Skills in a shared GitHub repository compatible with npx skills add, Claude Code marketplaces, and Codex. Use when adding an owned skill, registering a collected third-party skill, editing catalog metadata, regenerating plugin manifests, checking repository structure, or preparing a skills release.",
+      "version": "0.1.0",
+      "author": {
+        "name": "liuxj"
+      },
+      "category": "development",
+      "tags": [
+        "skills",
+        "repository",
+        "marketplace"
+      ]
+    }
+  ]
+}
