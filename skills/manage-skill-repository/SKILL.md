@@ -21,7 +21,7 @@ Manage this repository through its checked-in scripts and metadata instead of ed
 ## Rules
 
 - Treat `catalog.json` as the source of truth for marketplace metadata.
-- Do not manually edit generated `.claude-plugin/marketplace.json` or per-skill `.claude-plugin/plugin.json` files.
+- Do not manually edit generated `.claude-plugin/marketplace.json` file.
 - Require an explicit source URL and license for every collected skill.
 - Do not redistribute content without a compatible license or permission.
 - Keep `SKILL.md` concise and move detailed guidance to `references/`.

@@ -95,7 +95,7 @@ npm run skill:register -- <skill-name> \
 - `catalog.json` 记录分类、版本、来源和许可证。
 - `type: owned` 表示自己维护的 skill。
 - `type: collected` 必须同时声明 `source` 和 `license`。
-- `.claude-plugin/marketplace.json` 与各 skill 的 `plugin.json` 都是生成文件，不要手工编辑。
+- `.claude-plugin/marketplace.json` 为衍生生成的配置文件，不要手工编辑。
 
 ## 发布检查
 
