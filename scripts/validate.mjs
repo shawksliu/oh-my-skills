@@ -4,7 +4,6 @@ import path from 'node:path';
 import {
   catalogPath,
   expectedMarketplace,
-  expectedPluginManifest,
   listSkillNames,
   loadCatalog,
   marketplacePath,
@@ -97,19 +96,6 @@ for (const name of directoryNames) {
   if (entry.type === 'collected' && !entry.source) error(`catalog ${name}: collected skills require source`);
   if (entry.description !== parsed.metadata.description) {
     warning(`catalog ${name}: marketplace description differs from SKILL.md description`);
-  }
-
-  const pluginPath = path.join(skillsDirectory, name, '.claude-plugin', 'plugin.json');
-  if (!fs.existsSync(pluginPath)) {
-    error(`skills/${name}/.claude-plugin/plugin.json is missing; run npm run marketplace:sync`);
-  } else {
-    try {
-      const actual = readJson(pluginPath);
-      const expected = expectedPluginManifest(name, entry, catalog);
-      if (!sameJson(actual, expected)) error(`skills/${name}/.claude-plugin/plugin.json is stale; run npm run marketplace:sync`);
-    } catch (cause) {
-      error(`skills/${name}/.claude-plugin/plugin.json: ${cause.message}`);
-    }
   }
 
   const openAiPath = path.join(skillsDirectory, name, 'agents', 'openai.yaml');

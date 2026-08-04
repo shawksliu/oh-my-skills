@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "karpathy-guidelines": {
+      "source": "shawksliu/oh-my-skills",
+      "sourceType": "github",
+      "skillPath": "skills/karpathy-guidelines/SKILL.md",
+      "computedHash": "b4a1db773d6f1cc6cce8868f9274226e0ff4ec4b826b07a0207e9f245345ae68"
+    }
+  }
+}

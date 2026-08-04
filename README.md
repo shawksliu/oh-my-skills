@@ -12,7 +12,6 @@
 .
 ├─ skills/<skill-name>/          # 一个目录对应一个可安装 skill
 │  ├─ SKILL.md                   # 通用 Agent Skills 入口
-│  ├─ .claude-plugin/plugin.json # 由同步脚本生成
 │  ├─ agents/openai.yaml         # 可选，Codex UI 元数据
 │  ├─ scripts/                   # 可选，确定性工具
 │  ├─ references/                # 可选，按需加载的参考资料

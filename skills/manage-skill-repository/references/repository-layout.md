@@ -5,7 +5,6 @@
 - Installable skills: `skills/<name>/SKILL.md`
 - Catalog source: `catalog.json`
 - Generated marketplace: `.claude-plugin/marketplace.json`
-- Generated plugin manifest: `skills/<name>/.claude-plugin/plugin.json`
 
 Keep skill directories flat. Nested category directories can reduce compatibility with clients that only scan known one-level skill paths.
 

@@ -68,25 +68,7 @@ function compactObject(value) {
   return Object.fromEntries(Object.entries(value).filter(([, item]) => item !== undefined));
 }
 
-export function expectedPluginManifest(name, entry, catalog) {
-  const author = compactObject({
-    name: catalog.marketplace.owner.name,
-    email: catalog.marketplace.owner.email,
-  });
-
-  return compactObject({
-    $schema: 'https://json.schemastore.org/claude-code-plugin.json',
-    name,
-    description: entry.description,
-    version: entry.version,
-    author,
-    license: entry.license,
-    keywords: entry.tags?.length ? entry.tags : undefined,
-    skills: ['./'],
-  });
-}
-
-export function expectedMarketplace(catalog) {
+export function expectedMarketplace(catalog = loadCatalog()) {
   const plugins = Object.entries(catalog.skills)
     .sort(([left], [right]) => left.localeCompare(right))
     .map(([name, entry]) => compactObject({
@@ -115,16 +97,13 @@ export function expectedMarketplace(catalog) {
 }
 
 export function syncGeneratedFiles(catalog = loadCatalog()) {
-  for (const [name, entry] of Object.entries(catalog.skills)) {
-    const skillDirectory = path.join(skillsDirectory, name);
-    if (!fs.existsSync(skillDirectory)) {
-      throw new Error(`catalog entry has no directory: skills/${name}`);
+  for (const name of listSkillNames()) {
+    const legacyPluginDir = path.join(skillsDirectory, name, '.claude-plugin');
+    if (fs.existsSync(legacyPluginDir)) {
+      fs.rmSync(legacyPluginDir, { recursive: true, force: true });
     }
-    writeJson(
-      path.join(skillDirectory, '.claude-plugin', 'plugin.json'),
-      expectedPluginManifest(name, entry, catalog),
-    );
   }
+
   writeJson(marketplacePath, expectedMarketplace(catalog));
 }
 
