@@ -137,6 +137,34 @@
         "ui",
         "testing"
       ]
+    },
+    "content-infographic": {
+      "type": "owned",
+      "displayName": "Content Infographic",
+      "description": "Turn conversation content, notes, or an explanation into a single shareable infographic-style image (PNG) — a distilled visual summary with intentional typography and layout, not just a screenshot of text. Use this whenever the user asks to turn something into an image, picture, poster, card, or infographic (\"整理成图片\", \"做成一张图\", \"生成一张总结图\", \"做成长图/知识卡片\", \"turn this into an image\", \"make an infographic\", \"summarize this as a visual\", \"make a poster/card of this\"), even if they don't use the word \"infographic\" explicitly. Also use when the user wants a shareable visual recap of something already discussed in the conversation.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "design",
+      "tags": [
+        "infographic",
+        "visual-summary",
+        "design"
+      ]
+    },
+    "frontend-dev": {
+      "type": "collected",
+      "displayName": "Frontend Dev",
+      "description": "Full-stack frontend development combining premium UI design, cinematic animations, AI-generated media assets, persuasive copywriting, and visual art. Builds complete, visually striking web pages with real media, advanced motion, and compelling copy. Use when building landing pages, marketing sites, product pages, dashboards, generating media assets (image/video/audio/music), writing conversion copy, creating generative art, or implementing cinematic scroll animations.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "https://github.com/custom-third-party/frontend-dev",
+      "category": "development",
+      "tags": [
+        "frontend",
+        "ui",
+        "design",
+        "animation"
+      ]
     }
   }
 }

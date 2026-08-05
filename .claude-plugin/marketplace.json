@@ -25,6 +25,21 @@
       ]
     },
     {
+      "name": "content-infographic",
+      "source": "./skills/content-infographic",
+      "description": "Turn conversation content, notes, or an explanation into a single shareable infographic-style image (PNG) — a distilled visual summary with intentional typography and layout, not just a screenshot of text. Use this whenever the user asks to turn something into an image, picture, poster, card, or infographic (\"整理成图片\", \"做成一张图\", \"生成一张总结图\", \"做成长图/知识卡片\", \"turn this into an image\", \"make an infographic\", \"summarize this as a visual\", \"make a poster/card of this\"), even if they don't use the word \"infographic\" explicitly. Also use when the user wants a shareable visual recap of something already discussed in the conversation.",
+      "version": "0.1.0",
+      "author": {
+        "name": "liuxj"
+      },
+      "category": "design",
+      "tags": [
+        "infographic",
+        "visual-summary",
+        "design"
+      ]
+    },
+    {
       "name": "doc-to-docx",
       "source": "./skills/doc-to-docx",
       "description": "将 .doc 与 .wps 格式文档转换为 .docx 格式文档的转换工具。优先调用 WPS/Word COM 接口，跨平台或无 Office 环境下自动降级调用 LibreOffice。当用户需要将 .doc/.wps 转化为 .docx、批量转换旧版 Word/WPS 文档格式时使用此技能。",
@@ -56,6 +71,22 @@
         "architecture",
         "visualization",
         "uml"
+      ]
+    },
+    {
+      "name": "frontend-dev",
+      "source": "./skills/frontend-dev",
+      "description": "Full-stack frontend development combining premium UI design, cinematic animations, AI-generated media assets, persuasive copywriting, and visual art. Builds complete, visually striking web pages with real media, advanced motion, and compelling copy. Use when building landing pages, marketing sites, product pages, dashboards, generating media assets (image/video/audio/music), writing conversion copy, creating generative art, or implementing cinematic scroll animations.",
+      "version": "1.0.0",
+      "author": {
+        "name": "liuxj"
+      },
+      "category": "development",
+      "tags": [
+        "frontend",
+        "ui",
+        "design",
+        "animation"
       ]
     },
     {
