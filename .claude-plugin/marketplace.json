@@ -108,7 +108,7 @@
     {
       "name": "image-understanding",
       "source": "./skills/image-understanding",
-      "description": "Inspect, describe, OCR, and analyze image files or image URLs through a configurable OpenAI-compatible multimodal API. Use when Codex needs external vision for PNG, JPEG, GIF, WebP, or BMP images; when built-in image reading is unavailable or insufficient; or when the user asks to identify objects, landmarks, documents, screenshots, charts, text, or visual details. The provider and model are selected through environment variables or the skill's own .env file, so this skill is not tied to Qwen or ModelScope.",
+      "description": "Inspect, describe, OCR, and analyze image files or image URLs via a multimodal vision model. Use when Codex needs external vision for PNG, JPEG, GIF, WebP, or BMP images; when built-in image reading is unavailable or insufficient; or when the user asks to identify objects, landmarks, documents, screenshots, charts, text, or visual details.",
       "version": "0.1.0",
       "author": {
         "name": "liuxj"
