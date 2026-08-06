@@ -1,0 +1,4 @@
+interface:
+  display_name: "通用图片理解"
+  short_description: "通过可配置多模态模型识别、描述并分析本地或网络图片"
+  default_prompt: "Use $image-understanding to inspect this image and answer my question in Chinese."

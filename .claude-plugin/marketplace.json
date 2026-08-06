@@ -106,6 +106,22 @@
       ]
     },
     {
+      "name": "image-understanding",
+      "source": "./skills/image-understanding",
+      "description": "Inspect, describe, OCR, and analyze image files or image URLs through a configurable OpenAI-compatible multimodal API. Use when Codex needs external vision for PNG, JPEG, GIF, WebP, or BMP images; when built-in image reading is unavailable or insufficient; or when the user asks to identify objects, landmarks, documents, screenshots, charts, text, or visual details. The provider and model are selected through environment variables or the skill's own .env file, so this skill is not tied to Qwen or ModelScope.",
+      "version": "0.1.0",
+      "author": {
+        "name": "liuxj"
+      },
+      "category": "utility",
+      "tags": [
+        "vision",
+        "image-understanding",
+        "multimodal",
+        "ocr"
+      ]
+    },
+    {
       "name": "imagegen",
       "source": "./skills/imagegen",
       "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas.",
