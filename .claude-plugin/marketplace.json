@@ -184,6 +184,22 @@
       ]
     },
     {
+      "name": "serve-html",
+      "source": "./skills/serve-html",
+      "description": "通过 HTTP 在本地访问 HTML 页面。当需要预览 HTML 文件、测试静态站点、或避免 file:// 协议限制时使用。",
+      "version": "1.0.0",
+      "author": {
+        "name": "liuxj"
+      },
+      "category": "utility",
+      "tags": [
+        "html",
+        "http-server",
+        "preview",
+        "web"
+      ]
+    },
+    {
       "name": "visual-frontend-verification",
       "source": "./skills/visual-frontend-verification",
       "description": "前端与视觉类改动(UI、Web 应用、CSS/HTML/React/Vue/SVG/Canvas 组件与图表)完成后的自我验证规程,核心是不许偷懒:必须用真实渲染截图确认效果,发现问题立即修复并重新验证直至通过,不允许仅凭代码改动或终端无报错就宣称完成。当编写、修改或调试前端 UI、样式、响应式布局、交互组件或图表时使用这个规程,即使用户没有明确要求\"验证\"或\"截图\"。",

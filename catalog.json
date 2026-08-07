@@ -179,6 +179,20 @@
         "multimodal",
         "ocr"
       ]
+    },
+    "serve-html": {
+      "type": "owned",
+      "displayName": "Serve Html",
+      "description": "通过 HTTP 在本地访问 HTML 页面。当需要预览 HTML 文件、测试静态站点、或避免 file:// 协议限制时使用。",
+      "version": "1.0.0",
+      "license": "MIT",
+      "category": "utility",
+      "tags": [
+        "html",
+        "http-server",
+        "preview",
+        "web"
+      ]
     }
   }
 }
