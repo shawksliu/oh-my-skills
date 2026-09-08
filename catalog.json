@@ -193,6 +193,34 @@
         "preview",
         "web"
       ]
+    },
+    "chatgpt-image-generator": {
+      "type": "owned",
+      "displayName": "ChatGPT Image Generator",
+      "description": "Automates the end-to-end workflow of generating images, logos, UI assets, and illustrations using ChatGPT (DALL-E) via the browser subagent. Use this skill whenever the user asks to use ChatGPT to design, generate, or download images, icons, or visual concepts.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "design",
+      "tags": [
+        "chatgpt",
+        "image-generation",
+        "dalle",
+        "browser-automation"
+      ]
+    },
+    "mermaid-diagram-generator": {
+      "type": "owned",
+      "displayName": "Mermaid Diagram Generator",
+      "description": "Automates the workflow of creating, rendering, and exporting high-resolution diagrams using Mermaid Live Editor (https://mermaid.live/edit) via the browser subagent. Use this skill whenever the user asks to draw diagrams (architecture, flowchart, sequence, ER, class, etc.) in Mermaid and download/export them as pristine PNG/SVG images.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "design",
+      "tags": [
+        "mermaid",
+        "diagram",
+        "visualization",
+        "browser-automation"
+      ]
     }
   }
 }

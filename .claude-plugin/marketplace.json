@@ -25,6 +25,22 @@
       ]
     },
     {
+      "name": "chatgpt-image-generator",
+      "source": "./skills/chatgpt-image-generator",
+      "description": "Automates the end-to-end workflow of generating images, logos, UI assets, and illustrations using ChatGPT (DALL-E) via the browser subagent. Use this skill whenever the user asks to use ChatGPT to design, generate, or download images, icons, or visual concepts.",
+      "version": "0.1.0",
+      "author": {
+        "name": "liuxj"
+      },
+      "category": "design",
+      "tags": [
+        "chatgpt",
+        "image-generation",
+        "dalle",
+        "browser-automation"
+      ]
+    },
+    {
       "name": "content-infographic",
       "source": "./skills/content-infographic",
       "description": "Turn conversation content, notes, or an explanation into a single shareable infographic-style image (PNG) — a distilled visual summary with intentional typography and layout, not just a screenshot of text. Use this whenever the user asks to turn something into an image, picture, poster, card, or infographic (\"整理成图片\", \"做成一张图\", \"生成一张总结图\", \"做成长图/知识卡片\", \"turn this into an image\", \"make an infographic\", \"summarize this as a visual\", \"make a poster/card of this\"), even if they don't use the word \"infographic\" explicitly. Also use when the user wants a shareable visual recap of something already discussed in the conversation.",
@@ -181,6 +197,22 @@
         "conversion",
         "pdf",
         "office"
+      ]
+    },
+    {
+      "name": "mermaid-diagram-generator",
+      "source": "./skills/mermaid-diagram-generator",
+      "description": "Automates the workflow of creating, rendering, and exporting high-resolution diagrams using Mermaid Live Editor (https://mermaid.live/edit) via the browser subagent. Use this skill whenever the user asks to draw diagrams (architecture, flowchart, sequence, ER, class, etc.) in Mermaid and download/export them as pristine PNG/SVG images.",
+      "version": "0.1.0",
+      "author": {
+        "name": "liuxj"
+      },
+      "category": "design",
+      "tags": [
+        "mermaid",
+        "diagram",
+        "visualization",
+        "browser-automation"
       ]
     },
     {
